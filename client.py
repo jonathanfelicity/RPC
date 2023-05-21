@@ -4,7 +4,7 @@ import xmlrpc.client
 proxy = xmlrpc.client.ServerProxy("http://localhost:8000/")
 
 # Call the remote function
-result = proxy.add(5, 3)
+result: int = proxy.add(50, 345)
 
 # Print the result
 print("Result:", result)

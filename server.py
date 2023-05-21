@@ -1,7 +1,7 @@
 from xmlrpc.server import SimpleXMLRPCServer
 
 # Define the function to be exposed
-def add(x, y):
+def add(x: int, y: int)-> int:
     return x + y
 
 # Create the server
